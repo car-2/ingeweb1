@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Product</title>
     <link rel="stylesheet" type="text/css" href="newproduct.css"
+    
 </head>
 <body>
    <nav>
@@ -24,21 +25,30 @@
             </li>
             <li>
                 <a href="newProduct.html">New Product</a>
-            </li>
-        </ul>
+             </li>
+       </ul>
     </nav>
-    <form>
-     <label>New Product</label>   
-    <label>Name</label>
-    <input type="text" id="name">
-
-    <label>Price</label>
-    <input type="numbre" id="price">
-
-    <label>Inventory</label>
-    <input type="number" id="inventory">
-
-    <button>Create Product</button>
-    </form>
+    <form id="new-product-form">
+        <h2>New product</h2>
+      
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" class="form-control" placeholder="introduzca el nombre">
+        </div>
+      
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input type="number" id="price" class="form-control" placeholder="introduzca el precio">
+        </div>
+      
+        <div class="form-group">
+          <label for="inventory">Inventory</label>
+          <input type="number" id="inventory" class="form-control" placeholder="introduzca el inventario">
+        </div>
+      
+        <button type="submit" class="btn btn-primary">Create product</button>
+      </form>
+      
+<script src="./new_product.js"></script>
 </body>
 </html>
