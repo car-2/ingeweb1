@@ -7,15 +7,15 @@ function validateForm() {
   
     
     if (name === "") {
-      alert("El campo 'Nombre' es obligatorio.");
+      alert("El campo 'NOMBRE' es obligatorio.");
       return false;
     }
     if (price === "") {
-      alert("El campo 'Precio' es obligatorio.");
+      alert("El campo 'PRECIO' es obligatorio.");
       return false;
     }
     if (inventory === "") {
-      alert("El campo 'Inventario' es obligatorio.");
+      alert("El campo 'INVENTARIO' es obligatorio.");
       return false;
     }
   
