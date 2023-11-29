@@ -99,3 +99,7 @@ button:hover {
 h2{
     color: #E74C3C;
 }
+
+.error-message {
+    color: red;
+  }
