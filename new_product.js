@@ -1,35 +1,25 @@
-
 function validateForm() {
-    
-    const name = document.getElementById("name").value;
-    const price = document.getElementById("price").value;
-    const inventory = document.getElementById("inventory").value;
-  
-    
-    if (name === "") {
-      alert("El campo 'NOMBRE' es obligatorio.");
-      return false;
-    }
-    if (price === "") {
-      alert("El campo 'PRECIO' es obligatorio.");
-      return false;
-    }
-    if (inventory === "") {
-      alert("El campo 'INVENTARIO' es obligatorio.");
-      return false;
-    }
-  
-    
-    return true;
+  const name = document.getElementById('name').value;
+  const price = document.getElementById('price').value;
+  const inventory = document.getElementById('inventory').value;
+
+  document.getElementById('name-error').innerText = '';
+  document.getElementById('price-error').innerText = '';
+  document.getElementById('inventory-error').innerText = '';
+
+  if (name === '') {
+    document.getElementById('name-error').innerText = 'El nombre es obligatorio';
   }
-  
-  
-  document.getElementById("new-product-form").onsubmit = validateForm;
-  
-  
-  document.getElementById("new-product-form").querySelector("button").onclick = function() {
-   
-    if (validateForm()) {
-      alert("Producto creado correctamente.");
-    }
-  };
+
+  if (price === '') {
+    document.getElementById('price-error').innerText = 'El precio es obligatorio';
+  }
+
+  if (inventory === '') {
+    document.getElementById('inventory-error').innerText = 'El inventario es obligatorio';
+  }
+
+  if (name !== '' && price !== '' && inventory !== '') {
+    alert('Formulario creado con éxito');
+  }
+}
