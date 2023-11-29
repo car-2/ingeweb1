@@ -5,50 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Product</title>
     <link rel="stylesheet" type="text/css" href="newproduct.css"
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      crossorigin="anonymous"
+    />
 </head>
 <body>
-   <nav>
-        <div class="nav-main">
-         <div>   
-           <img src = "./logoapp.svg" alt = "logo"> 
-        </div>
-        <ul class="menu">
-            <li>
-                <a href="#">Products</a>
-            </li>
-            <li>
-                <a href="#">Car</a>
-            </li>
-            <li>
-                <a href="#">Login</a>
-            </li>
-            <li>
-                <a href="newProduct.html">New Product</a>
-             </li>
-       </ul>
-    </nav>
+  <nav>
+    <div class="nav-main">
+     <div>   
+       <img src = "./logoapp.svg" alt = "logo"> 
+    </div>
+    <ul class="menu">
+        <li>
+            <a href="#">Products</a>
+        </li>
+        <li>
+            <a href="#">Car</a>
+        </li>
+        <li>
+            <a href="#">Login</a>
+        </li>
+        <li>
+            <a href="newProduct.html">New Product</a>
+        </li>
+    </ul>
+</nav>
     <form id="new-product-form">
-        <h2>New product</h2>
-      
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" class="form-control" placeholder="introduzca el nombre">
-        </div>
-      
-        <div class="form-group">
-          <label for="price">Price</label>
-          <input type="number" id="price" class="form-control" placeholder="introduzca el precio">
-        </div>
-      
-        <div class="form-group">
-          <label for="inventory">Inventory</label>
-          <input type="number" id="inventory" class="form-control" placeholder="introduzca el inventario">
-        </div>
-      
-        <button type="submit" class="btn btn-primary">Create product</button>
-      </form>
-      
+      <h2>New product</h2>
+  
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Introduzca el nombre">
+        <p id="name-error" class="error-message"></p>
+      </div>
+  
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input type="number" id="price" class="form-control" placeholder="Introduzca el precio">
+        <p id="price-error" class="error-message"></p>
+      </div>
+  
+      <div class="form-group">
+        <label for="inventory">Inventory</label>
+        <input type="number" id="inventory" class="form-control" placeholder="Introduzca el inventario">
+        <p id="inventory-error" class="error-message"></p>
+      </div>
+  
+      <button type="button" class="btn btn-primary" onclick="validateForm()">Create product</button>
+      <button type="reset">Limpiar</button>
+    </form>
+          
 <script src="./new_product.js"></script>
 </body>
 </html>
